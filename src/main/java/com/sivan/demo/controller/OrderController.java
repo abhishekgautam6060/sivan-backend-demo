@@ -52,7 +52,8 @@ public class OrderController {
 
     @GetMapping("/")
     public ResponseEntity<List<Order>> getAllOrders(){
-        return orderRepository.findAll();
+         List<Order> orders = orderRepository.findAll();
+        return ResponseEntity.ok(orders);
     }
 
     @PostMapping("/create-payment")
