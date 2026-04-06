@@ -51,8 +51,8 @@ public class OrderController {
     }
 
     @GetMapping("/")
-    public String getAllOrders(){
-        return "Yes its working";
+    public ResponseEntity<List<Order>> getAllOrders(){
+        return orderRepository.findAll();
     }
 
     @PostMapping("/create-payment")
