@@ -61,7 +61,7 @@ public class OrderController {
 
         int amount = Integer.parseInt(data.get("amount").toString()) * 100; // paise
 
-        RazorpayClient client = new RazorpayClient("rzp_test_SVYcmrkOmNmKFK", "AJemS12ZmgfegW3X2KAuNJM1");
+        RazorpayClient client = new RazorpayClient("rzp_live_SaIs3feDessrO6", "7y7FRh3zNPrJ6YsvgLRHALTI");
 
         JSONObject options = new JSONObject();
         options.put("amount", amount);
